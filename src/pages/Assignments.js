@@ -4,7 +4,6 @@ import { useAuth } from '../context/AuthContext';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { HiCalendar, HiClipboardCheck, HiClock } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
-import toast from 'react-hot-toast';
 
 const Assignments = () => {
   const [assignments, setAssignments] = useState([]);

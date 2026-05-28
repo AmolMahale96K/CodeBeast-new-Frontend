@@ -5,7 +5,7 @@ import { useAuth } from '../context/AuthContext';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { HiSearch, HiBookmark, HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 
-const DIFFICULTIES = ['', 'Easy', 'Medium', 'Hard'];
+// const DIFFICULTIES = ['', 'Easy', 'Medium', 'Hard'];
 const CATEGORIES = ['', 'Arrays', 'Strings', 'Linked Lists', 'Trees', 'Graphs', 'Dynamic Programming', 'Sorting', 'Searching', 'Math', 'Recursion'];
 
 const Problems = () => {

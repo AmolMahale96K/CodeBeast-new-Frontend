@@ -2,9 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { testAPI } from '../services/api';
 import { useAuth } from '../context/AuthContext';
 import LoadingSpinner from '../components/LoadingSpinner';
-import { HiClock, HiCollection, HiPlay } from 'react-icons/hi';
+import { HiClock, HiCollection } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
-import toast from 'react-hot-toast';
 
 const Tests = () => {
   const [tests, setTests] = useState([]);

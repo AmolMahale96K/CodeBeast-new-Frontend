@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useTheme } from '../context/ThemeContext';
 import {
-  HiHome, HiCode, HiCollection, HiClipboardList, HiChartBar,
-  HiCog, HiSun, HiMoon, HiLogout, HiMenuAlt2, HiX, HiStar, HiShieldCheck,
+  HiHome, HiCode, HiCollection, HiClipboardList,
+  HiCog, HiSun, HiMoon, HiLogout, HiMenuAlt2, HiStar, HiShieldCheck,
 } from 'react-icons/hi';
 
 const navItems = [
@@ -26,8 +26,6 @@ const Sidebar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const { user, logout, isAdmin } = useAuth();
   const { dark, toggle } = useTheme();
-  const location = useLocation();
-
   const NavItem = ({ to, icon: Icon, label }) => (
     <NavLink
       to={to}

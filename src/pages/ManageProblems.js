@@ -2,12 +2,12 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { problemAPI } from '../services/api';
 import { useAuth } from '../context/AuthContext';
 import LoadingSpinner from '../components/LoadingSpinner';
-import { HiPlus, HiPencil, HiTrash, HiX, HiCheck } from 'react-icons/hi';
+import { HiPlus, HiPencil, HiTrash, HiX } from 'react-icons/hi';
 import toast from 'react-hot-toast';
 
 const DIFFICULTIES = ['Easy', 'Medium', 'Hard'];
 const CATEGORIES = ['Arrays', 'Strings', 'Linked Lists', 'Trees', 'Graphs', 'Dynamic Programming', 'Sorting', 'Searching', 'Math', 'Recursion'];
-const LANGUAGES = ['python', 'java', 'c'];
+// const LANGUAGES = ['python', 'java', 'c'];
 
 const emptyProblem = {
   title: '', description: '', difficulty: 'Easy', category: 'Arrays',

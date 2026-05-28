@@ -3,7 +3,7 @@ import { assignmentAPI, problemAPI } from '../services/api';
 import { useAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import LoadingSpinner from '../components/LoadingSpinner';
-import { HiPlus, HiTrash, HiX } from 'react-icons/hi';
+import { HiPlus, HiTrash } from 'react-icons/hi';
 import toast from 'react-hot-toast';
 
 const CreateAssignment = () => {
