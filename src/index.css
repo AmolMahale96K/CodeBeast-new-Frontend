@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { @apply transition-colors duration-200; }
+  body { @apply font-sans antialiased; }
+  ::-webkit-scrollbar { @apply w-2 h-2; }
+  ::-webkit-scrollbar-track { @apply bg-dark-100 dark:bg-dark-800; }
+  ::-webkit-scrollbar-thumb { @apply bg-dark-300 dark:bg-dark-600 rounded-full; }
+  ::-webkit-scrollbar-thumb:hover { @apply bg-dark-400 dark:bg-dark-500; }
+}
+
+@layer components {
+  .btn { @apply px-4 py-2 rounded-lg font-medium text-sm inline-flex items-center justify-center gap-2 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed; }
+  .btn-primary { @apply btn bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500; }
+  .btn-secondary { @apply btn bg-dark-200 dark:bg-dark-700 text-dark-800 dark:text-dark-200 hover:bg-dark-300 dark:hover:bg-dark-600; }
+  .btn-danger { @apply btn bg-red-600 text-white hover:bg-red-700 focus:ring-red-500; }
+  .btn-success { @apply btn bg-emerald-600 text-white hover:bg-emerald-700 focus:ring-emerald-500; }
+  .btn-outline { @apply btn border border-dark-300 dark:border-dark-600 text-dark-700 dark:text-dark-300 hover:bg-dark-100 dark:hover:bg-dark-800; }
+  .btn-ghost { @apply btn text-dark-600 dark:text-dark-400 hover:bg-dark-100 dark:hover:bg-dark-800; }
+  .card { @apply bg-white dark:bg-dark-800 rounded-xl border border-dark-200 dark:border-dark-700 shadow-sm; }
+  .card-body { @apply p-6; }
+  .input { @apply w-full px-3 py-2.5 rounded-lg border border-dark-300 dark:border-dark-600 bg-white dark:bg-dark-800 text-dark-900 dark:text-dark-100 placeholder-dark-400 dark:placeholder-dark-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent text-sm; }
+  .label { @apply block text-sm font-medium text-dark-700 dark:text-dark-300 mb-1.5; }
+  .badge { @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium; }
+  .badge-easy { @apply badge bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-400; }
+  .badge-medium { @apply badge bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-400; }
+  .badge-hard { @apply badge bg-red-100 dark:bg-red-900/40 text-red-700 dark:text-red-400; }
+}
