@@ -13,6 +13,7 @@ import Problems from './pages/Problems';
 import ProblemDetail from './pages/ProblemDetail';
 import Leaderboard from './pages/Leaderboard';
 import Assignments from './pages/Assignments';
+import AssignmentDetail from './pages/AssignmentDetail';
 import Tests from './pages/Tests';
 import AdminDashboard from './pages/AdminDashboard';
 import ManageProblems from './pages/ManageProblems';
@@ -46,6 +47,7 @@ const AppRoutes = () => (
       <Route path="/problems/:slug" element={<ProtectedRoute><ProblemDetail /></ProtectedRoute>} />
       <Route path="/leaderboard" element={<ProtectedRoute><Leaderboard /></ProtectedRoute>} />
       <Route path="/assignments" element={<ProtectedRoute><Assignments /></ProtectedRoute>} />
+      <Route path="/assignments/:id" element={<ProtectedRoute><AssignmentDetail /></ProtectedRoute>} />
       <Route path="/tests" element={<ProtectedRoute><Tests /></ProtectedRoute>} />
 
       <Route path="/admin" element={<ProtectedRoute adminOnly><AdminDashboard /></ProtectedRoute>} />
